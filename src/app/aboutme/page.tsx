@@ -1,8 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import WelcomeMessage from '@/components/welcomeMessage'
 
-export default function Home() {
+export default function Page() {
   return (
     <main className={styles.main}>
       <div className={styles.contact}>
@@ -15,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <WelcomeMessage />
+        {/* <WelcomeMessage /> */}
       </div>
 
       <div className={styles.grid}>
