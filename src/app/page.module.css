@@ -28,7 +28,6 @@
 .contact p {
   position: relative;
   margin: 0;
-  padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
@@ -98,14 +97,14 @@
   z-index: -1;
 }
 
-@keyframes movingGlow {
+/* @keyframes movingGlow {
   0% {
     offset-distance: 0%;
   }
   100% {
     offset-distance: 100%;
   }
-}
+} */
 
 .center::before,
 .center::after {

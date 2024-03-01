@@ -7,7 +7,13 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.contact}>
         <p>
-          Contact Me
+          <a
+            href="/contact"
+            className={styles.card}
+            rel="noopener noreferrer"
+          >
+            Contact Me
+          </a>
         </p>
         <div>
           By Jawad Arshad
