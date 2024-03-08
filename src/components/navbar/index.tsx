@@ -6,7 +6,7 @@ export default function Navbar() {
     <main className={styles.main}>
       <div className={styles.logocontainer}>
         <a href="/">
-          <Image className={styles.logo} src={logo} alt="Jawad Arshad in cursive" width={200} href/>
+          <Image className={styles.logo} src={logo} alt="Jawad Arshad in cursive" width={200}/>
         </a>
       </div>
       <div className={styles.navlinks}>
