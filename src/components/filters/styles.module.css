@@ -1,0 +1,17 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  width: 400px;
+  height: 100%;
+}
+
+.filterTitle {
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid white;
+}

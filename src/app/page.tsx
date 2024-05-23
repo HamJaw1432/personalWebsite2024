@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import WelcomeMessage from '@/components/welcomeMessage'
+import WelcomeMessage from '@/components/wellcomeMessage'
 
 export default function Home() {
   return (

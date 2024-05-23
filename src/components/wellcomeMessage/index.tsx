@@ -17,7 +17,7 @@ export default function WelcomeMessage() {
   const [currentWelcomeMessage, setCurrentWelcomeMessage] = useState<number>(0);
 
   useEffect(()=>{
-    const intervalID = setInterval(()=>setCurrentWelcomeMessage((currentWelcomeMessage+1) % welcomeTexts.length), 2500);
+    const intervalID = setInterval(()=>setCurrentWelcomeMessage((currentWelcomeMessage+1) % welcomeTexts.length), 1500);
     return () => {clearInterval(intervalID)};
   })
 

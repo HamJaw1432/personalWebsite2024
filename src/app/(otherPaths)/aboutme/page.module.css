@@ -1,67 +1,26 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    padding: 6rem;
-    min-height: 80vh;
-  }
-  
-  .center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 4rem 0;
-  }
-  
-  .center::before {
-    background: var(--secondary-glow);
-    border-radius: 50%;
-    width: 480px;
-    height: 360px;
-    margin-left: -400px;
-  }
-  
-  .center::after {
-    background: var(--primary-glow);
-    width: 240px;
-    height: 180px;
-    z-index: -1;
-  }
-  
-  /* @keyframes movingGlow {
-    0% {
-      offset-distance: 0%;
-    }
-    100% {
-      offset-distance: 100%;
-    }
-  } */
-  
-  .center::before,
-  .center::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    filter: blur(45px);
-  
-    /* animation: movingGlow 7000ms infinite alternate ease-in-out;
-    offset-path: path("M32.5 1C182.093 128.431 106.158 166.525 47.8721 169.903C46.7205 169.97 45.6258 169.314 45.104 168.285C7.81407 94.7715 124.493 41.5306 188 24M188 24L253.983 163.616C255.114 166.008 252.817 168.587 250.31 167.74L6.19521 85.2554C3.9488 84.4964 3.42938 81.5541 5.28008 80.0718L102.396 2.28491C103.363 1.51046 104.706 1.40997 105.778 2.03194L280.802 103.643C282.45 104.6 282.8 106.831 281.524 108.247L189.174 210.697C188.449 211.502 187.346 211.853 186.289 211.616L7.16957 171.386C4.70146 170.831 3.9852 167.659 5.97571 166.098L214.971 2.19869C215.902 1.46933 217.173 1.35402 218.219 1.90418L282.027 35.4625C283.198 36.0785 283.828 37.3891 283.576 38.6883L250.655 208.619C250.309 210.406 248.463 211.475 246.741 210.887L3.03081 127.693C1.8163 127.279 1 126.137 1 124.854V41.8578C1 38.4738 5.72952 37.6792 6.83532 40.8775L63.3872 204.443C64.2928 207.062 67.9621 207.158 69.0029 204.589L141.939 24.5962C143.274 21.3001 138.781 18.8321 136.716 21.7274L12.1289 196.397C10.1414 199.184 13.6206 202.59 16.3645 200.545L268.233 12.7557C270.988 10.7019 274.472 14.1401 272.455 16.9219L133.631 208.371C132.377 210.1 129.769 210.002 128.649 208.184L7.06076 10.8371C5.43778 8.20286 8.38135 5.13408 11.0808 6.64599L273.396 153.561C276.129 155.092 279.084 151.936 277.377 149.309L185.637 8.13609C184.095 5.7621 180.424 6.65004 180.137 9.46668L160.742 199.815C160.423 202.937 156.131 203.536 154.97 200.621L80.9659 14.7299C79.7566 11.6922 83.589 9.18598 85.8871 11.5117L270.385 198.222C272.795 200.661 276.75 197.802 275.191 194.749L188 24Z"); */
-  }
-    
-  /* Mobile */
-  @media (max-width: 700px) {  
-    .center {
-      padding: 8rem 0 6rem;
-    }
-  
-    .center::before {
-      transform: none;
-      height: 300px;
-    }
 
+.mainText {
+  max-width: 800px;
+}
+
+.textSection {
+  margin: 20px 10px;
+}
+
+.textSection a {
+  color: hotpink;
+  text-decoration: underline;
+  margin: 5px;
+}
+  .textSection ul{
+    margin: 10px 0 0 50px;
+  }
+
+  .textSection li{
+    margin: 10px;
+  }
+  .textSectionSmall{
+    font-size: 12px;
+    margin: 50px 0 0 0;
   }
   

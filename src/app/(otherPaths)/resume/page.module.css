@@ -1,0 +1,56 @@
+.mainRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* min-height: 68vh; */
+  padding: 10px;
+  /* border: 1px solid rgb(var(--main-contrast-color)); */
+  /* border-radius: 10px; */
+}
+
+.filters {
+  width: 300px;
+  background-color: red;
+}
+
+.mainResumeBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+  padding: 0 0 0 20px;
+}
+
+.resumeLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.resumeLink {
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 15px;
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.resumeLink:hover {
+  background: rgba(var(--card-rgb), 0.3);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
