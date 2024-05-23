@@ -9,11 +9,15 @@ type ResumeInfoProps = {
   typeFilter: string[];
 };
 
-export default function ResumeInfo({ search }: ResumeInfoProps) {
+export default function ResumeInfo({
+  search,
+  typeFilter,
+  techFilter,
+}: ResumeInfoProps) {
   const filteredResumeInformation = useMemo(() => {
     const searchTerm = search.toLowerCase();
 
-    const filteredInformation = resumeInformation.map((section) => {
+    const filteredInformationSearch = resumeInformation.map((section) => {
       return {
         section: section.section,
         points: section.section.toLowerCase().includes(searchTerm)
@@ -37,11 +41,37 @@ export default function ResumeInfo({ search }: ResumeInfoProps) {
       };
     });
 
-    return filteredInformation;
+    const filteredInformationTypeFilter = filteredInformationSearch.filter(
+      (section) =>
+        typeFilter.length >= 1 ? typeFilter.includes(section.section) : true
+    );
+
+    const filteredInformationTechFilter = filteredInformationTypeFilter.map(
+      (section) => {
+        const filtered = section.points.filter((sectionPoint) => {
+          return techFilter.length > 0
+            ? sectionPoint.technology
+                .map((tech) => {
+                  return techFilter.length > 0
+                    ? techFilter.includes(tech)
+                    : true;
+                })
+                .some((isInTechFilter) => isInTechFilter === true)
+            : true;
+        });
+
+        return {
+          section: section.section,
+          points: filtered,
+        };
+      }
+    );
+
+    return filteredInformationTechFilter;
   }, [search]);
 
   return (
-    <div>
+    <div className={styles.resumeInfoContainer}>
       {filteredResumeInformation.map((section, i) => {
         return section.points.map((sectionPoint) => {
           return <InfoBox type={section.section} point={sectionPoint} />;
