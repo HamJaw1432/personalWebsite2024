@@ -77,7 +77,7 @@
 }
 
 .logocontainer {
-  margin: 5px 20px;
+  margin: 20px 20px;
 }
 
 .hamburgerMenu {
@@ -91,6 +91,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 500;
 }
 
 /* Enable hover only on non-touch devices */
@@ -171,11 +176,5 @@
   .navlinks {
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }

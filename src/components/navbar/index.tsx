@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
-import Image from "next/image";
-import logo from "@/assests/signature-png.png";
+// import Image from "next/image";
+// import logo from "@/assests/signature-png.png";
 import NavbarMobile from "./mobileNav";
 
 export default function Navbar() {
@@ -9,13 +9,14 @@ export default function Navbar() {
       <main className={styles.main}>
         <div className={styles.logocontainer}>
           <a href="/">
-            <Image
+            {/* <Image
               className={styles.logo}
               src={logo}
               alt="Jawad Arshad in cursive"
               width={200}
               priority
-            />
+            /> */}
+            <div className={styles.logo}>JAWAD ARSHAD</div>
           </a>
         </div>
         <div className={styles.navlinks}>

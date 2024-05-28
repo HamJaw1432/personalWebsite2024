@@ -11,13 +11,7 @@ export default function NavbarMobile() {
     <main className={styles.mainMobile}>
       <div className={styles.logocontainer}>
         <a href="/">
-          <Image
-            className={styles.logo}
-            src={logo}
-            alt="Jawad Arshad in cursive"
-            width={200}
-            priority
-          />
+          <div className={styles.logo}>JAWAD ARSHAD</div>
         </a>
       </div>
       <div className={styles.hamburgerMenu} onClick={() => setIsOpen(!isOpen)}>
