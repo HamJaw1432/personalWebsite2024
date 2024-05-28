@@ -5,6 +5,7 @@ import ResumeInfo from "@/components/resumeInfo";
 import Filters from "@/components/filters";
 import PdfIcon from "@/assests/pdfIcon.svg";
 import Image from "next/image";
+import FiltersMobile from "@/components/filtersMobile";
 
 export const metadata: Metadata = {
   title: "About Me - Jawad Arshad",
@@ -38,6 +39,7 @@ export default function Page({
       <div className={styles.mainResumeBody}>
         <div className={styles.flexRow}>
           <div className={styles.resumeLinks}>
+            <FiltersMobile />
             <a
               href="/resumes/Jawad_s_Resume_All.pdf"
               target="_blank"

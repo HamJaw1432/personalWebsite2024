@@ -46,7 +46,7 @@ export default function Filter({
     <div>
       {values.map((value, i) => {
         return (
-          <div key={i}>
+          <div key={i} className={styles.filterValue}>
             <input
               type="checkbox"
               value={value}

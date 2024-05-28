@@ -1,24 +1,35 @@
+"use client";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import logo from "@/assests/signature-png.png";
-import NavbarMobile from "./mobileNav";
+import hamburger from "@/assests/hamburger.svg";
+import { useState } from "react";
 
-export default function Navbar() {
+export default function NavbarMobile() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <main className={styles.main}>
-        <div className={styles.logocontainer}>
-          <a href="/">
-            <Image
-              className={styles.logo}
-              src={logo}
-              alt="Jawad Arshad in cursive"
-              width={200}
-              priority
-            />
-          </a>
-        </div>
-        <div className={styles.navlinks}>
+    <main className={styles.mainMobile}>
+      <div className={styles.logocontainer}>
+        <a href="/">
+          <Image
+            className={styles.logo}
+            src={logo}
+            alt="Jawad Arshad in cursive"
+            width={200}
+            priority
+          />
+        </a>
+      </div>
+      <div className={styles.hamburgerMenu} onClick={() => setIsOpen(!isOpen)}>
+        <Image
+          src={hamburger}
+          width={25}
+          height={25}
+          alt="Hamburger Menu Icon"
+        />
+      </div>
+      {isOpen && (
+        <div className={styles.navlinksMobile}>
           <a href="/aboutme" className={styles.card} rel="noopener noreferrer">
             <h2>
               About Me <span>-&gt;</span>
@@ -54,8 +65,7 @@ export default function Navbar() {
             </p>
           </div>
         </div>
-      </main>
-      <NavbarMobile />
-    </div>
+      )}
+    </main>
   );
 }

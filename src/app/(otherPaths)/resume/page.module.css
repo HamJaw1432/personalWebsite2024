@@ -54,3 +54,24 @@
   background: rgba(var(--card-rgb), 0.3);
   border: 1px solid rgba(var(--card-border-rgb), 0.15);
 }
+
+/* Mobile */
+@media (max-width: 700px) {
+  .flexRow {
+    flex-direction: column;
+  }
+  .resumeLinks {
+    flex-wrap: wrap;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .flexRow {
+    flex-direction: column;
+  }
+
+  .resumeLinks {
+    flex-wrap: wrap;
+  }
+}

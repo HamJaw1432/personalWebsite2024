@@ -53,3 +53,23 @@
 .type {
   opacity: 50%;
 }
+
+/* Mobile */
+@media (max-width: 700px) {
+  .flexRow {
+    flex-direction: column;
+  }
+
+  .place {
+    align-self: flex-start;
+    margin: 0 0 10px 0;
+  }
+
+  .date {
+    margin: 10px 0 0 0;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
