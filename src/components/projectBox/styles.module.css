@@ -1,0 +1,66 @@
+.mainContainer {
+  margin: 20px;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 380px;
+  align-self: stretch;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.subheading {
+  font-style: italic;
+}
+
+.place {
+  font-style: italic;
+  font-size: 12px;
+  align-self: flex-end;
+}
+
+.date {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.points {
+  margin: 10px;
+  font-size: 12px;
+}
+
+.points ul {
+  margin: 20px 0 0 20px;
+}
+
+.points li {
+  margin: 10px;
+}
+
+.technology {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.type {
+  opacity: 50%;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}

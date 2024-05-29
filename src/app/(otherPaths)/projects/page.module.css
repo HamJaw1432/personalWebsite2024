@@ -1,0 +1,24 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.note {
+  text-align: center;
+}
+
+.note a {
+  color: hotpink;
+  text-decoration: underline;
+  margin: 5px;
+}

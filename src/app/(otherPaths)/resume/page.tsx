@@ -8,8 +8,9 @@ import Image from "next/image";
 import FiltersMobile from "@/components/filtersMobile";
 
 export const metadata: Metadata = {
-  title: "About Me - Jawad Arshad",
-  description: "A little bit about who I am",
+  title: "Resume - Jawad Arshad",
+  description:
+    "Discover the professional resume of Jawad Arshad, showcasing my experience in software engineering.",
 };
 
 export default function Page({

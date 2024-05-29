@@ -3,7 +3,8 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "About Me - Jawad Arshad",
-  description: "A little bit about who I am",
+  description:
+    "Learn more about Jawad Arsahd, a dedicated professional with a passion for software engineering. Discover my core values, personal interests, and more!",
 };
 
 export default function Page() {
