@@ -9,8 +9,11 @@ export default function ContactMeForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    setIsLoading(true);
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
@@ -20,11 +23,14 @@ export default function ContactMeForm() {
       body: formData,
     });
 
-    // Handle response if necessary
     const data = await response.json();
     if (response.status === 200) {
       push("/sent");
+    } else {
+      console.error(data.error);
+      setError("Somthing went wrong!");
     }
+    setIsLoading(true);
   }
 
   return (
@@ -64,9 +70,14 @@ export default function ContactMeForm() {
           placeholder="Your Message"
         />
       </label>
-      <button className={styles.submitButton} type="submit">
-        Submit
+      <button
+        className={styles.submitButton}
+        type="submit"
+        disabled={isLoading}
+      >
+        {isLoading ? "Sending" : "Submit"}
       </button>
+      <div className={styles.error}>{error}</div>
     </form>
   );
 }

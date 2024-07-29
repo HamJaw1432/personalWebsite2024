@@ -24,7 +24,7 @@
           "Built a full-stack web application using NextJS with Typescript, NestJS and Firebase to allow users to bridge tokens on multiple chains, had over 30+ chains with 4000+ tokens on 15+ bridges.",
           "Developed a DeFi Hub application that allowed users to trade, earn and explore in DeFi, with real time price data shown on a Tradingview lightweight charts.",
           "Implemented functions to firebase function that completed various tasks, like updating a price document on firebase store on a scheduled basis.",
-          "Deployed many Smart Contracts to the blockchain, like a presale contract, and a lottery contract."
+          "Deployed many Smart Contracts to the blockchain, like a pre-sale contract, and a lottery contract."
         ],
         "technology": []
       },
@@ -75,7 +75,7 @@
         "date": "Aug 2020 -- May 2021",
         "points": [
           "Improved efficiency by improving time it took to complete daily tasks to allow for more time to do tasks that improved the store.",
-          "Oversaw inventory control, including procurement, and stock tracking. Maintained accurate records and minimized stockouts, ensuring consistent availability of essential supplies.",
+          "Oversaw inventory control, including procurement, and stock tracking. Maintained accurate records and minimized stock outages, ensuring consistent availability of essential supplies.",
           "Provided excellent customer service by addressing inquiries and concerns related to product availability, orders, and inventory."
         ],
         "technology": []
@@ -116,12 +116,12 @@
         "place": "Toronto, ON",
         "date": "Jan 2024 -- Apr 2024",
         "points": [
-          "Hacked networks to conduct different types of attacks, like packet sniffing (with wireshark, and scapy python libaray), malicious gateway, APR spoofing, ICMP Ping flood, TCP-syc flooding, TCP connenction reset, DNS cache poisoning, http sniffer, ssl striping, as well as doing general penetration testing (using nmap, openvas, metasploit).",
+          "Hacked networks to conduct different types of attacks, like packet sniffing (with wireshark, and scapy python library), malicious gateway, APR spoofing, ICMP Ping flood, TCP-syc flooding, TCP connection reset, DNS cache poisoning, http sniffer, ssl striping, as well as doing general penetration testing (using nmap, openvas, metasploit).",
           "Looked at rainbow tables to reverse hashed passwords.",
           "Hacked systems using different attacks like buffer overflow (Stack Smashing Attack (Branching), Stack Smashing Attack (Shellcode), Adjacent Memory Shellcode), TOCTOU, hidden malware (malware inside a Debian package).",
           "Hacked web applications using various attacks like Incomplete Mediation, SQL injection (SQLi), Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF).",
           "Wrote a protocol that is similar to TLS version 1.3, that used the Diffie Hellman key exchange algorithm.",
-          "Worked with different public and symmetric key algorithms like Caesar Ciphers, Substitution Ciphers, Polyalphabetic Ciphers, One Time Pad Ciphers, Stream Ciphers (RC4, Salsa20/Chacha20), Block Ciphers (DES, AES), RSA, ECC. Also exploited different vulnerability like key reuse attacks, known plain text, etc.",
+          "Worked with different public and symmetric key algorithms like Caesar Ciphers, Substitution Ciphers, Poly alphabetic Ciphers, One Time Pad Ciphers, Stream Ciphers (RC4, Salsa20/Chacha20), Block Ciphers (DES, AES), RSA, ECC. Also exploited different vulnerability like key reuse attacks, known plain text, etc.",
           "Explored cryptographic hash functions and message authentication codes (MD5 SHA-1, etc), and exploited different vulnerability like hash length extensions. Also used GPG to encrypt and sign messages."
         ],
         "technology": ["Python", "C", "Bash", "Wireshark"]
@@ -443,7 +443,7 @@
           "Studied the theories and algorithms of Artificial Intelligence. Topics include search, game playing, logical representations and reasoning, planning, reasoning and decision making with uncertainty, computational perception. Assignments provide practical experience of the core topics.",
           "Looked at many different search methods, like uninformed search methods (DFS, BFS, UCS), and informed search methods (Greedy Search, A*).",
           "Explored Constraint Satisfaction Problem and how to solve them (Backtracking Search, Cutset Conditioning), and efficiently choose unassigned variables with filtering (Forward Checking, Constraint Propagation, Arc Consistency) and ordering (Minimum Remaining Values, Least Constraining Value).",
-          "Examined adversarial search problems, and how to solve them using minimax values, and how to make it  more efficient with Alpha-Beta Pruning, and Depth-limited search. Followed up with hhow to solve adversarial search problems with uncertainty using Expectimax, and Monte Carlo Tree Search.",
+          "Examined adversarial search problems, and how to solve them using minimax values, and how to make it  more efficient with Alpha-Beta Pruning, and Depth-limited search. Followed up with how to solve adversarial search problems with uncertainty using Expectimax, and Monte Carlo Tree Search.",
           "Learned how to find optimal policies for simultaneous games, by finding Nash Equilibrium points, solving Markov Decision Processes (Value Iteration, Policy Iteration)",
           "Acquired techniques to create reinforcement learning agents, with techniques like passive reinforcement learning (Model-based, Model-free), active reinforcement learning (Exploration, Exploitation).",
           "Learned to use bayesian networks and hidden Markov model to make inferences",
@@ -462,14 +462,14 @@
         "technology": ["C", "Python"],
         "points": [
           "Studied Public and symmetric key algorithms and their application; key management and certification; authentication protocols; digital signatures and data integrity; secure network and application protocols; application, system and network attacks and defences; intrusion detection and prevention; social engineering attacks; risk assessment and management.",
-          "Worked with different public and symmetric key algorithms like Caesar Ciphers, Substitution Ciphers, Polyalphabetic Ciphers, One Time Pad Ciphers, Stream Ciphers (RC4, Salsa20/Chacha20), Block Ciphers (DES, AES), RSA, ECC. Also exploited different vulnerability like key reuse attacks, known plain text, etc.",
+          "Worked with different public and symmetric key algorithms like Caesar Ciphers, Substitution Ciphers, Poly alphabetic Ciphers, One Time Pad Ciphers, Stream Ciphers (RC4, Salsa20/Chacha20), Block Ciphers (DES, AES), RSA, ECC. Also exploited different vulnerability like key reuse attacks, known plain text, etc.",
           "Explored cryptographic hash functions and message authentication codes (MD5 SHA-1, etc), and exploited different vulnerability like hash length extensions. Also used GPG to encrypt and sign messages.",
-          "Hacked networks to conduct different types of attacks, like packet sniffing (with wireshark, and scapy python libaray), malicious gateway, APR spoofing, ICMP Ping flood, TCP-syc flooding, TCP connenction reset, DNS cache poisoning, http sniffer, ssl striping, as well as doing general penetration testing (using nmap, openvas, metasploit).",
+          "Hacked networks to conduct different types of attacks, like packet sniffing (with wireshark, and scapy python library), malicious gateway, APR spoofing, ICMP Ping flood, TCP-syc flooding, TCP connection reset, DNS cache poisoning, http sniffer, ssl striping, as well as doing general penetration testing (using nmap, openvas, metasploit).",
           "Looked at rainbow tables to reverse hashed passwords.",
           "Hacked systems using different attacks like buffer overflow (Stack Smashing Attack (Branching), Stack Smashing Attack (Shellcode), Adjacent Memory Shellcode), TOCTOU, hidden malware (malware inside a Debian package).",
           "Hacked web application using various attacks like Incomplete Mediation, SQL injection (SQLi), Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF).",
           "Wrote a protocol that is similar to TLS version 1.3, that used the Diffie Hellman key exchange algorithm.",
-          "Examined different ways to protect against exploits, like using a nonce, Public key infrasturcture, web of trust, signed certificates, firewalls, Vpns, TOR, salted hash password storage."
+          "Examined different ways to protect against exploits, like using a nonce, Public key infrastructure, web of trust, signed certificates, firewalls, Vpns, TOR, salted hash password storage."
         ],
         "subheading": "",
         "place": "Toronto, ON",
@@ -505,10 +505,10 @@
         "technology": ["Theory"],
         "points": [
           "Explored various algorithm design techniques including divide-and-conquer, greedy strategies, dynamic programming, linear programming, randomization, and others.",
-          "Studied greedy algorithms such as the interval scheduling problem, minimum lateness scheduling, Dijkstra’s algorithm, and Huffman codes.",
-          "Learned divide-and-conquer algorithms including merge sort, binary search, Karatsuba’s multiplication, Strassen’s matrix multiplication, closest pair of points, and order statistics, along with their running time analysis.",
+          "Studied greedy algorithms such as the interval scheduling problem, minimum lateness scheduling, Dijkstra's algorithm, and Huffman codes.",
+          "Learned divide-and-conquer algorithms including merge sort, binary search, Karatsuba's multiplication, Strassen's matrix multiplication, closest pair of points, and order statistics, along with their running time analysis.",
           "Explored dynamic programming algorithms such as the longest increasing subsequence, weighted interval scheduling, optimal sequence alignment, Optimal Binary Search Tree, and 0-1 knapsack.",
-          "Studied different shortest path algorithms including Bellman-Ford, Floyd-Warshall, and Johnson’s algorithm.",
+          "Studied different shortest path algorithms including Bellman-Ford, Floyd-Warshall, and Johnson's algorithm.",
           "Worked with max flow/min cut algorithms (e.g., Ford-Fulkerson) and their applications like bipartite graph matching, minimum vertex covers in bipartite graphs, and finding the maximum cardinality set of edge-disjoint paths.",
           "Solved problems using linear programming techniques such as the Diet problem, Profit maximization, max flow, min cost flow, and linear regression. Also examined integer linear programming problems like facility location.",
           "Explored approximation algorithms for hard-to-solve problems like vertex cover, set cover, minimum makespan, k-centers, and the knapsack problem."

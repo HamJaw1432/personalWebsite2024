@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Resume - Jawad Arshad",
   description:
     "Discover the professional resume of Jawad Arshad, showcasing my experience in software engineering.",
+  creator: "Jawad Arshad",
 };
 
 export default function Page({
