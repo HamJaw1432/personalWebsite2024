@@ -19,9 +19,9 @@ export default function WelcomeMessage() {
     const intervalID = setInterval(
       () =>
         setCurrentWelcomeMessage(
-          (currentWelcomeMessage + 1) % welcomeTexts.length
+          (currentWelcomeMessage + 1) % welcomeTexts.length,
         ),
-      1500
+      1500,
     );
     return () => {
       clearInterval(intervalID);
@@ -32,7 +32,7 @@ export default function WelcomeMessage() {
     <>
       <HelloText>{welcomeTexts[currentWelcomeMessage]}</HelloText>
       <WelcomeText>
-        Welcome to my (Jawad Arshad's) personal website.
+        Welcome to my (Jawad Arshad&apos;s) personal website.
       </WelcomeText>
     </>
   );

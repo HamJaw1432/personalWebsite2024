@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 function debounce(
   callback: (filter: string, checked: boolean) => void,
-  delay: number
+  delay: number,
 ) {
   let timer: ReturnType<typeof setTimeout>;
   return function (filter: string, checked: boolean) {

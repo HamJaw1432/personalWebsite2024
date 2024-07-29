@@ -8,8 +8,8 @@ const TechFilters = Array.from(
       .map((section) => {
         return section.points.map((point) => point.technology);
       })
-      .flat(Infinity)
-  )
+      .flat(Infinity),
+  ),
 ).sort() as string[];
 
 const TypeFilters = resumeInformation.map((section) => section.section);

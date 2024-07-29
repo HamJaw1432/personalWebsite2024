@@ -29,10 +29,10 @@ export default function ResumeInfo({
                 sectionPoint.place.toLowerCase().includes(searchTerm) ||
                 sectionPoint.subheading.toLowerCase().includes(searchTerm) ||
                 sectionPoint.points.some((point) =>
-                  point.toLowerCase().includes(searchTerm)
+                  point.toLowerCase().includes(searchTerm),
                 ) ||
                 sectionPoint.technology.some((tech) =>
-                  tech.toLowerCase().includes(searchTerm)
+                  tech.toLowerCase().includes(searchTerm),
                 )
               ) {
                 return true;
@@ -43,7 +43,7 @@ export default function ResumeInfo({
 
     const filteredInformationTypeFilter = filteredInformationSearch.filter(
       (section) =>
-        typeFilter.length >= 1 ? typeFilter.includes(section.section) : true
+        typeFilter.length >= 1 ? typeFilter.includes(section.section) : true,
     );
 
     const filteredInformationTechFilter = filteredInformationTypeFilter.map(
@@ -64,17 +64,19 @@ export default function ResumeInfo({
           section: section.section,
           points: filtered,
         };
-      }
+      },
     );
 
     return filteredInformationTechFilter;
-  }, [search]);
+  }, [search, techFilter, typeFilter]);
 
   return (
     <div className={styles.resumeInfoContainer}>
       {filteredResumeInformation.map((section, i) => {
-        return section.points.map((sectionPoint) => {
-          return <InfoBox type={section.section} point={sectionPoint} />;
+        return section.points.map((sectionPoint, j) => {
+          return (
+            <InfoBox key={j} type={section.section} point={sectionPoint} />
+          );
         });
       })}
     </div>

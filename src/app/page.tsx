@@ -44,7 +44,9 @@ export default function Home() {
           <h2>
             Blog <span>-&gt;</span>
           </h2>
-          <p>My thoughts on tech, and other things I'm passionate about.</p>
+          <p>
+            My thoughts on tech, and other things I&apos;m passionate about.
+          </p>
         </a>
       </div>
     </main>
