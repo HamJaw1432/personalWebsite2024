@@ -9,13 +9,13 @@ export default function Page() {
     <div className={styles.mainContainer}>
       <h1>Contact Me</h1>
       <div className={styles.externalLinks}>
-        <a>
+        <a href="https://github.com/HamJaw1432">
           <div className={styles.externalLink}>
             <Image src={githubLogo} alt="Github Logo" width={32} height={30} />
             GitHub
           </div>
         </a>
-        <a>
+        <a href="https://www.linkedin.com/in/jawad-arshad2001/">
           <div className={styles.externalLink}>
             <Image
               src={linkedinLogo}
